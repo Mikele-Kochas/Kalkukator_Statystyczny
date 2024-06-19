@@ -1,18 +1,18 @@
 import streamlit as st
 
-# Funkcja obliczająca statystyki
-def oblicz_statystyki(lista_liczb):
-    lista_liczb = sorted(lista_liczb)
-    suma = sum(lista_liczb)
-    ilość = len(lista_liczb)
-    iloczyn_liczb = 1
-
 # Funkcja sprawdzająca czy lista zawiera wartości niedodatnie
 def sprawdz_czy_niedodatnie(lista_liczb):
     for liczba in lista_liczb:
         if liczba <= 0:
             return True
     return False
+
+# Funkcja obliczająca statystyki
+def oblicz_statystyki(lista_liczb):
+    lista_liczb = sorted(lista_liczb)
+    suma = sum(lista_liczb)
+    ilość = len(lista_liczb)
+    iloczyn_liczb = 1
 
     # Obliczenie mediany
     if ilość == 1:
