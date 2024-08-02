@@ -94,7 +94,6 @@ def oblicz_statystyki(lista_liczb):
 
 # Streamlit interfejs użytkownika
 st.set_page_config(page_title="Kalkulator Statystyczny")
-st.subheader("Nie bierz tej stronki zbyt poważnie, dopiero się uczę")
 st.title("Kalkulator Statystyczny")
 
 input_text = st.text_area("Wprowadź liczby rozdzielone przecinkami:", "1, 2, 3, 4, 5")
